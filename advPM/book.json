@@ -1,0 +1,27 @@
+{
+    "output": "../advPM",
+    "generator": "site",
+    "title": "软考帮高项真题库",
+    "basePath":"",
+    "description": "来自软考帮的信息系统项目管理师资料库。",
+    "plugins": [ "-exercises", "quizzes" ],
+	"pluginsConfig": {
+        "fontSettings": {
+            "theme": "sepia",
+            "family": "serif",
+            "size": "1"
+        }
+    },
+    "links": {
+        "sidebar": {
+            "软考帮网站": "http://www.rkbang.com"
+        },
+        "sharing": {
+            "google": false,
+            "weibo": false,
+            "twitter": false,
+            "facebook": false,
+            "all": false
+        }
+    }
+}
