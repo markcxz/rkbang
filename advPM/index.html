@@ -35,12 +35,12 @@
 
 
         
-    <div class="book"  data-level="0" data-basepath="." data-revision="1410263599110">
+    <div class="book"  data-level="0" data-basepath="." data-revision="1410352524286">
     
 
 <div class="book-summary">
     <div class="book-search">
-        <input type="text" placeholder="Type to search" class="form-control" />
+        <input type="text" placeholder="输入查询条件" class="form-control" />
     </div>
     <ul class="summary">
         
@@ -206,7 +206,8 @@
         <div class="body-inner">
             <div class="book-header">
     <!-- Actions Left -->
-    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>    
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
     
     <div id="font-settings-wrapper" class="dropdown pull-left">
         <a href="#" class="btn toggle-dropdown" aria-label="Toggle font settings"><i class="fa fa-font"></i>
@@ -253,22 +254,16 @@
                 <span class="caret-inner"></span>
             </div>
             <div class="buttons bdsharebuttonbox" style="padding:5px 15px 5px 20px;">
-                <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
-                <a href="#" class="bds_qq" data-cmd="qq" title="分享到QQ收藏"></a>
-                <a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a>
-                <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
-                <a href="#" class="bds_bdysc" data-cmd="bdysc" title="分享到百度云收藏"></a>
-                <a href="#" class="bds_tieba" data-cmd="tieba" title="分享到百度贴吧"></a>
-                <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
-                <a href="#" class="bds_t163" data-cmd="t163" title="分享到网易微博"></a>
-                <a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a>
-                <a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a>
+                <button type="button" data-sharing="cnRenren" class="button">分享到人人网</button>
+                <button type="button" data-sharing="cnDouban" class="button">分享到豆瓣网</button>
+                <button type="button" data-sharing="cnQzone" class="button">分享到QQ空间</button>
+                <button type="button" data-sharing="cnTqq" class="button">分享到腾讯微博</button>
+                <button type="button" data-sharing="cnTsina" class="button">分享到新浪微博</button>
             </div>
         </div>
     </div>
 
-    <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
-    </script>
+
     
 
     <!-- Title -->
