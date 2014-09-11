@@ -20,17 +20,17 @@
 }
 
 .page-inner section.quiz .message {
-    margin: 15px;
+    margin: 10px;
 }
 
 .page-inner section.quiz .question .question-header {
-    padding: 5px 15px;
+    padding: 3px 10px;
     color: #fff;
     background: #2f8cde;
 }
 
 .page-inner section.quiz .question .question-inner {
-    padding: 15px;
+    padding: 5px;
 }
 
 .page-inner section.quiz .question .question-inner .quiz-label {
