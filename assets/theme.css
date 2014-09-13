@@ -1,20 +1,18 @@
 ﻿body {
-  padding-top: 60px;
-  padding-bottom: 30px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
-
+.navbar-brand{
+  color: #fff !important;
+}
 .theme-dropdown .dropdown-menu {
   position: static;
   display: block;
   margin-bottom: 20px;
 }
 
-.theme-showcase > p > .btn {
-  margin: 5px 0;
-}
-
-.theme-showcase .navbar .container {
-  width: auto;
+section > .container {
+  background-color: #fff;
 }
 
 p {
@@ -23,32 +21,9 @@ p {
 p a {
 	text-indent: 0px; 
 }
-/* Sticky footer styles
--------------------------------------------------- */
 html {
   position: relative;
   min-height: 100%;
-}
-body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
-}
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 60px;
-  background-color: #f5f5f5;
-}
-
-
-/* Custom page CSS
--------------------------------------------------- */
-/* Not required for template or sticky footer method. */
-
-.footer .container .text-muted {
-  margin: 20px 0;
 }
 
 .sharebar{
@@ -67,7 +42,7 @@ body {
   background-image: url(icons_0_16.png);
   background-repeat: no-repeat;
   cursor: pointer;
-  margin: 6px 10px 6px 0;
+  margin: 6px 6px 6px 0;
 }
 
 .sharebar .cnRenren {
@@ -90,5 +65,45 @@ body {
 }
 .sharebar .cnWeixin {
   background-position: 0 -1612px;
+}
+.sharebar .cnKanshou {
+  background-position: 0 -2860px;
+}
+.sharebar .cnTsohu {
+  background-position: 0 -520px;
+}
+
+.block-navbar{
+  height: 50px;
+}
+
+
+.block-archive {
+  background-color: #CCFFFF;
+}
+.block-archive .container {
+  padding-top: 10px;
+}
+
+.block-link {
+  background-color: #00CCCC;
+}
+
+.block-about {
+  background-color: #99FFFF;
+}
+
+.block-foot {
+  background-color: #CCCCFF;
+}
+.link-row{
+  border-bottom: 1px dashed #ccc;
+  margin-bottom: 4px;
+}
+.link-row a{
+  margin-bottom: 4px;
+}
+.link-title{
+  padding: 8px; margin-right: 10px;
 }
 

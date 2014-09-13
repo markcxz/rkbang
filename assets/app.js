@@ -15,9 +15,19 @@
         	 window.open("http://share.v.t.qq.com/index.php?c=share&a=index&url="+url+"&title="+title);
         }else if(type=="cnTsina"){
         	 window.open("http://service.weibo.com/share/share.php?url="+url+"&title="+title);
+        }else if(type=="cnKanshou"){
+             window.open("http://kan.sohu.com/share/?url="+url+"&title="+title);
+        }else if(type=="cnTsohu"){
+             window.open("http://t.sohu.com/third/post.jsp?url="+url+"&title="+title);
         }else{
         	console.log(type);
         }      
-    })
+    });
+
+    $('.navbar li a').click(function(event) {
+        event.preventDefault();
+        $($(this).attr('href'))[0].scrollIntoView();
+        scrollBy(0, -50);
+    });
 
   })

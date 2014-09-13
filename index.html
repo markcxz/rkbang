@@ -22,11 +22,8 @@
     <![endif]-->
 
   </head>
-  <body>
-    
-
-  <body role="document">
-
+  <body role="document" data-offset="60" data-spy="scroll" data-target=".navbar">
+  <section id="section_navbar" class="clearfix scrollblock block-navbar">   
     <!-- Fixed navbar -->
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
@@ -37,13 +34,16 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">软考帮</a>
+          <a class="navbar-brand" href="#">
+            <img alt="软考帮" src="assets/rkbang32.png" />
+            软考帮
+          </a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">网站首页</a></li>
-            <li><a href="#nav_about">关于软考帮</a></li>
-            <li><a href="#nav_ruankao">关于软考</a></li>
+            <li><a href="#section_archive">真题库</a></li>
+            <li><a href="#section_about">软考帮</a></li>
+            <li><a href="#section_link">友情链</a></li>
           </ul>
           
           <ul class="nav navbar-nav navbar-right sharebar">
@@ -61,6 +61,8 @@
               <a href="#" data-sharing="cnQzone" class="cnQzone" title="分享到QQ空间"></a>
               <a href="#" data-sharing="cnTqq" class="cnTqq" title="分享到腾讯微博"></a>
               <a href="#" data-sharing="cnTsina" class="cnTsina" title="分享到新浪微博"></a>
+              <a href="#" data-sharing="cnKanshou" class="cnKanshou" title="分享到搜狐随身看"></a>
+              <a href="#" data-sharing="cnTsohu" class="cnTsohu" title="分享到搜狐微博"></a>
             </li>
           </ul>
 
@@ -69,22 +71,27 @@
         </div><!--/.nav-collapse -->
       </div>
     </div>
+  </section>
 
-    <div class="container theme-showcase" role="main">
 
+    <section id="section_archive" class="clearfix scrollblock block-archive">    
+     <div class="container" role="main">  
       <div class="alert alert-success" role="alert">
         亲，欢迎加入软考帮，我们的口号是『<strong> 轻松学习软考，大家帮助大家</strong>』！
       </div>
-      
+
       <div class="row">
         <div class="col-sm-6">
           <div class="panel panel-default">
             <div class="panel-heading">
-              <h3 class="panel-title">信息系统项目管理师</h3>
+              <h3 class="panel-title">信息系统项目管理师<span class="badge">2</span></h3>
             </div>
             <div class="panel-body">
               <p>属于计算机技术与软件专业技术资格（水平）考试（即软考）高级资格考试里面的一项，对应于高级项目经理，通过本考试的合格人员具有高级工程师的实际工作能力和业务水平，可聘任高级工程师职务。
-              <a href="./advPM/" class="btn  btn-sm btn-info" role="button">访问资料库 &raquo;</a>
+              <a href="./advPM/" class="btn  btn-sm btn-info" role="button">
+                <span class="glyphicon glyphicon-hand-right"> </span> 
+                访问真题库 &raquo;
+              </a>
               </p>
               
             </div>
@@ -93,11 +100,13 @@
         <div class="col-sm-6">
           <div class="panel panel-default">
             <div class="panel-heading">
-              <h3 class="panel-title">系统集成项目管理工程师</h3>
+              <h3 class="panel-title">系统集成项目管理工程师<span class="badge">1</span></h3>
             </div>
             <div class="panel-body">
               <p>属于计算机技术与软件专业技术资格（水平）考试（即软考）中级资格考试里面的一项，对应于中级项目经理，主要在信息系统建设和集成工作中担任相关的项目管理工作，可聘任中级工程师职务。
-               <a href="./PM/" class="btn  btn-sm btn-info" role="button">访问资料库 &raquo;</a>
+                <a href="./PM/" class="btn  btn-sm btn-info" role="button">
+                  <span class="glyphicon glyphicon-hand-right"> </span> 访问真题库 &raquo;
+                </a>
               </p>
             </div>
           </div>
@@ -111,9 +120,7 @@
               <h3 class="panel-title">系统架构设计师</h3>
             </div>
             <div class="panel-body">
-              <p>属于软考高级资格考试里面的一项，是一个“最终确认和评估系统需求，给出开发规范，搭建系统实现的核心构架，并澄清技术细节、扫清主要难点”的技术人员，需要与系统分析师、项目管理师相互协作、配合工作，通过本考试的合格人员具有高级工程师的实际工作能力和业务水平。
-              </p>
-              
+              <p>属于软考高级资格考试里面的一项，是一个“最终确认和评估系统需求，给出开发规范，搭建系统实现的核心构架，并澄清技术细节、扫清主要难点”的技术人员，需要与系统分析师、项目管理师相互协作、配合工作，通过本考试的合格人员具有高级工程师的实际工作能力和业务水平。</p>              
             </div>
           </div>
         </div>
@@ -123,52 +130,93 @@
               <h3 class="panel-title">系统分析师</h3>
             </div>
             <div class="panel-body">
-              <p>属于软考高级资格考试里面的一种，早期被称作系统分析员，是指具有从事计算机应用系统的分析和设计工作能力及业务水平，能指导系统设计师和高级程序员的工作的一族，在软考体系中被称作含金量最高、难度最大的一门考试，通过本考试的合格人员具有高级工程师的实际工作能力和业务水平。
-              
-              </p>
+              <p>属于软考高级资格考试里面的一种，早期被称作系统分析员，是指具有从事计算机应用系统的分析和设计工作能力及业务水平，能指导系统设计师和高级程序员的工作的一族，在软考体系中被称作含金量最高、难度最大的一门考试，通过本考试的合格人员具有高级工程师的实际工作能力和业务水平。</p>
             </div>
           </div>
         </div>
       </div>
-      
-       <div class="page-header">
-        <h3 id="nav_about">关于软考帮</h3>
-      </div>
-      <div class="well">
-      		<p>一直想汇集一帮人学习软考知识、研究软考攻略，因为在繁忙的工作中坚持学习挺不容易，以考促学是一种手段，互相鼓励也是一种手段，于是搞了这个软考帮。希望通过历届的考试真题和考友的相互扶持营造出一个学习交流软件开发和管理知识的小圈子。</p>
-            <p>项目经理（信息系统项目管理师 &amp; 系统集成项目管理工程师）交流QQ群号<span class="label label-info">97981703</span><a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=51e578fbbb387fb3d3507c67afa8aa8c8a37bf437c8641dae338bc364bc6013a"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="软考帮-项目经理" title="软考帮-项目经理"></a>，架构师交流QQ群号<span class="label label-info">96880287</span><a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=770d1bfc9ab0a87e8d4c4081fe37414e7b31488ba158d26b4ef6b834d8346969"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="软考帮-架构师" title="软考帮-架构师"></a>，系统分析师交流QQ群号<span class="label label-info">96165359 </span><a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=e3a4a0eccd711b8733642e5887684141453fbba8065029b3f93956049cab8460"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="软考帮-系统分析师" title="软考帮-系统分析师"></a>，若你有分享资料的想法，可以在QQ群里直接分享，也可以发邮件至rkbang@126.com。</p>
-      </div>
-       <div class="page-header">
-        <h3 id="nav_ruankao">关于软考</h3>
-      </div>
-      <div class="well">
-        <p>计算机技术与软件专业技术资格（水平）考试（以下简称计算机软件考试）是原中国计算机软件专业技术资格和水平考试（简称软件考试）的完善与发展。这是由国家人力资源和社会保障部、工业和信息化部领导下的国家级考试，其目的是，科学、公正地对全国计算机与软件专业技术人员进行职业资格、专业技术资格认定和专业技术水平测试。</p>
-        <p>根据人事部、信息产业部文件（国人部发[2003]39号），计算机软件考试纳入全国专业技术人员职业资格证书制度的统一规划。通过考试获得证书的人员，表明其已具备从事相应专业岗位工作的水平和能力，用人单位可根据工作需要从获得证书的人员中择优聘任相应专业技术职务（技术员、助理工程师、工程师、高级工程师）。计算机专业技术资格（水平）实施全国统一考试后，不再进行计算机技术与软件相应专业和级别的专业技术职务任职资格评审工作。因此，这种考试既是职业资格考试，又是职称资格考试。</p>
-        <div>
-        	<a href="http://bbs.rkb.gov.cn/jsj/cms/kszn/zyjb/" class="btn  btn-sm btn-info" role="button">考试指南</a>
-        	<a href="http://bbs.rkb.gov.cn/jsj/cms/zcfg/" class="btn  btn-sm btn-default" role="button">政策法规</a>
-        	<a href="http://www.miit.gov.cn" class="btn  btn-sm btn-default" role="button">国家工信部</a>
-        	<a href="http://www.rkb.gov.cn" class="btn  btn-sm btn-default" role="button">中国计算机技术职业资格网(软考办)</a>
-        	<a href="http://www.rkb.gov.cn/jsj/cms/dfjg/dfjg_2011032801.html" class="btn  btn-sm btn-default" role="button">全国各省市软考网站</a>
-        </div>
-      </div>
-      
-      
-      
 
-    </div> 
-    <!-- /container -->
-    <div class="footer">
-      <div class="container">
-        <p class="text-muted">  &copy; 2014 www.rkbang.com all rights reserved.</p>        
-        <script type="text/javascript">
-            var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
-            document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F8099410928a300e62210677cc7066ade' type='text/javascript'%3E%3C/script%3E"));
-        </script>
+  </section>
+
+
+
+    <section id="section_about" class="clearfix scrollblock block-about">   
+      <div class="container" role="main">
+        <div class="page-header">
+            <h3><span class="glyphicon glyphicon-home"> </span> 软考帮</h3>
+        </div>        
+        <div class="well">
+            <p>一直想汇集一帮人学习软考知识、研究软考攻略，因为在繁忙的工作中坚持学习挺不容易，以考促学是一种手段，互相鼓励也是一种手段，于是搞了这个软考帮。希望通过历届的考试真题和考友的相互扶持营造出一个学习交流软件开发和管理知识的小圈子。</p>
+              <p>项目经理（信息系统项目管理师 &amp; 系统集成项目管理工程师）交流QQ群号<span class="label label-info">97981703</span><a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=51e578fbbb387fb3d3507c67afa8aa8c8a37bf437c8641dae338bc364bc6013a"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="软考帮-项目经理" title="软考帮-项目经理"></a>，架构师交流QQ群号<span class="label label-info">96880287</span><a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=770d1bfc9ab0a87e8d4c4081fe37414e7b31488ba158d26b4ef6b834d8346969"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="软考帮-架构师" title="软考帮-架构师"></a>，系统分析师交流QQ群号<span class="label label-info">96165359 </span><a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=e3a4a0eccd711b8733642e5887684141453fbba8065029b3f93956049cab8460"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="软考帮-系统分析师" title="软考帮-系统分析师"></a>，若你有分享资料的想法，可以在QQ群里直接分享，也可以发邮件至rkbang@126.com。</p>
+        </div>        
+        <div class="well">
+          <p>计算机技术与软件专业技术资格（水平）考试（以下简称计算机软件考试）是原中国计算机软件专业技术资格和水平考试（简称软件考试）的完善与发展。这是由国家人力资源和社会保障部、工业和信息化部领导下的国家级考试，其目的是，科学、公正地对全国计算机与软件专业技术人员进行职业资格、专业技术资格认定和专业技术水平测试。</p>
+          <p>根据人事部、信息产业部文件（国人部发[2003]39号），计算机软件考试纳入全国专业技术人员职业资格证书制度的统一规划。通过考试获得证书的人员，表明其已具备从事相应专业岗位工作的水平和能力，用人单位可根据工作需要从获得证书的人员中择优聘任相应专业技术职务（技术员、助理工程师、工程师、高级工程师）。计算机专业技术资格（水平）实施全国统一考试后，不再进行计算机技术与软件相应专业和级别的专业技术职务任职资格评审工作。因此，这种考试既是职业资格考试，又是职称资格考试。</p>
+        </div>
+
       </div>
-    </div>
-    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
-    <script src="http://cdn.bootcss.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-    <script src="assets/app.js"></script>
+    </section> 
+
+    <section id="section_link" class="clearfix scrollblock block-link">
+      <div class="container" role="main">
+          <div class="page-header">
+            <h3><span class="glyphicon glyphicon-link"> </span> 友情链</h3>
+          </div>   
+          <div class="link-row">
+            <span class="label label-info link-title">
+               主管机构
+            </span>                        
+            <a target="_blank" href="http://www.pmi.org" class="btn btn-sm btn-default" role="button">美国项目管理协会</a>                    
+            <a target="_blank" href="http://www.mohrss.gov.cn" class="btn btn-sm btn-default" role="button">人力资源和社会保障部</a>                    
+            <a target="_blank" href="http://www.miit.gov.cn" class="btn btn-sm btn-default" role="button">工业和信息化部</a>               
+            <a target="_blank" href="http://www.informatization.gov.cn/" class="btn btn-sm btn-default" role="button">中国电子协会系统集成分会</a>          
+            <a target="_blank" href="http://www.rkb.gov.cn" class="btn btn-sm btn-default" role="button">中国计算机技术职业资格网(软考办)</a>                    
+              <a href="http://www.rkb.gov.cn/jsj/cms/dfjg/dfjg_2011032801.html" class="btn  btn-sm btn-default" role="button">全国各省市软考网站</a>               
+          </div>
+
+          <div class="link-row">
+              <span class="label label-info link-title">
+                 考试说明
+              </span>
+              <a target="_blank" href="http://www.rkb.gov.cn/jsj/cms/zyjs/gj/zgjs_xxxtxmgls.html" class="btn  btn-sm btn-default" role="button">信息系统项目管理师考试说明</a>
+              <a target="_blank" href="http://www.rkb.gov.cn/jsj/cms/zyjs/zj/zyjs_xtjcgl.html" class="btn  btn-sm btn-default" role="button">系统集成项目管理工程师考试说明</a>
+              <a target="_blank" href="http://www.rkb.gov.cn/jsj/cms/zyjs/gj/zyjs_jgsjs.html" class="btn  btn-sm btn-default" role="button">系统架构设计师考试说明</a>
+              <a target="_blank" href="http://www.rkb.gov.cn/jsj/cms/zyjs/gj/zgjs_xtfxs.html" class="btn  btn-sm btn-default" role="button">系统分析师考试说明</a>
+
+              <a target="_blank" href="http://bbs.rkb.gov.cn/jsj/cms/kszn/zyjb/" class="btn  btn-sm btn-default" role="button">软考考试指南</a>
+          </div>
+
+          <div class="link-row">
+              <span class="label label-info link-title">
+                 资质查询
+              </span>
+              <a target="_blank" href="http://www.ceecm.gov.cn/miit_webmap/miit_jcqy" class="btn  btn-sm btn-default" role="button">集成企业资质查询</a>
+              <a target="_blank" href="http://www.ceecm.gov.cn/miit_webmap/miit_xmjl" class="btn  btn-sm btn-default" role="button">项目经理资质查询</a>
+              <a target="_blank" href="http://www.ceecm.gov.cn/miit_webmap/miit_gjxmjl" class="btn  btn-sm btn-default" role="button">高级项目经理资质查询</a>
+              <a target="_blank" href="http://www.ceecm.gov.cn/miit_webmap/miit_jlqy" class="btn  btn-sm btn-default" role="button">监理单位资质查询</a>              
+              <a target="_blank" href="http://www.ceecm.gov.cn/miit_webmap/miit_jlgcs" class="btn  btn-sm btn-default" role="button">监理工程师资质查询</a>
+
+          </div>
+          <div style="height:60px"> </div>
+      </div>
+    </section> 
+
+      <section id="section_foot" class="clearfix scrollblock block-foot">
+        <div class="container" role="main">
+            <div class="footer">
+              <div class="container">
+                <p class="text-muted">  &copy; 2014 www.rkbang.com all rights reserved.</p>        
+                <script type="text/javascript">
+                    var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+                    document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F8099410928a300e62210677cc7066ade' type='text/javascript'%3E%3C/script%3E"));
+                </script>
+              </div>
+            </div>
+            <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+            <script src="http://cdn.bootcss.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+            <script src="assets/app.js"></script>
+        </div>
+      </section> 
+
   </body>
 </html>
