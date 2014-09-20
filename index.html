@@ -206,10 +206,16 @@
             <div class="footer">
               <div class="container">
                 <p class="text-muted">  &copy; 2014 www.rkbang.com all rights reserved.</p>        
-                <script type="text/javascript">
-                    var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
-                    document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F8099410928a300e62210677cc7066ade' type='text/javascript'%3E%3C/script%3E"));
+                <script>
+                      var _hmt = _hmt || [];
+                      (function() {
+                        var hm = document.createElement("script");
+                        hm.src = "//hm.baidu.com/hm.js?8099410928a300e62210677cc7066ade";
+                        var s = document.getElementsByTagName("script")[0]; 
+                        s.parentNode.insertBefore(hm, s);
+                      })();
                 </script>
+
               </div>
             </div>
             <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
