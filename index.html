@@ -1,235 +1,422 @@
-﻿<!DOCTYPE html>
-<html lang="zh-cn">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="renderer" content="webkit">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>软考帮 | 轻松学习软考，大家帮助大家</title>
-    <meta name="description" content="轻松学习软考，大家帮助大家">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+<title>软考帮 | 关注您的期待，期待您的关注</title>
+<meta name="description" content="轻松学习软考，大家帮助大家。为您提供史上最清爽的全国软考真题库。">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap.min.css">
-	  <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-    <link href="assets/theme.css" rel="stylesheet">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/bootstrap.css" />
+<link rel="stylesheet" href="css/font-awesome.min.css" />
+<link rel="stylesheet" href="css/linea-icon.css" />
+<link rel="stylesheet" href="css/fancy-buttons.css" />
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+<!--=== Google Fonts ===-->
+<link href='http://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:300,700,400' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Raleway:600,400,300' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+<!--=== Other CSS files ===-->
+<link rel="stylesheet" href="css/animate.css" />
+<link rel="stylesheet" href="css/jquery.vegas.css" />
+<link rel="stylesheet" href="css/baraja.css" />
+<link rel="stylesheet" href="css/jquery.bxslider.css" />
 
-  </head>
-  <body role="document" data-offset="60" data-spy="scroll" data-target=".navbar">
-  <section id="section_navbar" class="clearfix scrollblock block-navbar">   
-    <!-- Fixed navbar -->
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">切换导航</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">
-            <img alt="软考帮" src="assets/rkbang32.png" />
-            软考帮
-          </a>
-        </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="#section_archive">真题库</a></li>
-            <li><a href="#section_about">软考帮</a></li>
-            <li><a href="#section_link">友情链</a></li>
-          </ul>
-          
-          <ul class="nav navbar-nav navbar-right sharebar">
-            <li>
-              <a href="#" data-sharing="cnWeixin" class="cnWeixin"  data-toggle="dropdown" title="分享到微信"></a>
+<!--=== Main Stylesheets ===-->
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/responsive.css" />
 
-              <div class="dropdown-menu panel panel-info">
-                  <div class="panel-body">
-                    <img alt="二维码" src="assets/qrcode.png" />
-                  </div>
-                  <div class="panel-footer">扫码也能打开本站哦(⊙o⊙)。</div>
-              </div>
-              <a href="#" data-sharing="cnRenren" class="cnRenren" title="分享到人人网"></a>
-              <a href="#" data-sharing="cnDouban" class="cnDouban" title="分享到豆瓣网"></a>
-              <a href="#" data-sharing="cnQzone" class="cnQzone" title="分享到QQ空间"></a>
-              <a href="#" data-sharing="cnTqq" class="cnTqq" title="分享到腾讯微博"></a>
-              <a href="#" data-sharing="cnTsina" class="cnTsina" title="分享到新浪微博"></a>
-              <a href="#" data-sharing="cnKanshou" class="cnKanshou" title="分享到搜狐随身看"></a>
-              <a href="#" data-sharing="cnTsohu" class="cnTsohu" title="分享到搜狐微博"></a>
-            </li>
-          </ul>
+<!--=== Color Scheme, three colors are available red.css, orange.css and gray.css ===-->
+<link rel="stylesheet" id="scheme-source" href="css/schemes/gray.css" />
+
+<!--=== Internet explorer fix ===-->
+<!-- [if lt IE 9]>
+	<script src="http://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<script src="http://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif] -->
 
 
+</head>
+<body>
+<!--=== Preloader section starts ===-->
+<section id="preloader">
+	<div class="loading-circle fa-spin"></div>
+</section>
+<!--=== Preloader section Ends ===-->
 
-        </div><!--/.nav-collapse -->
-      </div>
-    </div>
-  </section>
+<!--=== Header section Starts ===-->
+<div id="header" class="header-section">
+	<!-- sticky-bar Starts-->
+	<div class="sticky-bar-wrap">
+		<div class="sticky-section">
+			<div id="topbar-hold" class="nav-hold container">
+				<nav class="navbar" role="navigation">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+						</button>
+						<!--=== Site Name ===-->
+						<a class="site-name navbar-brand" href="#">软考帮</a>
+					</div>
+					
+					<!-- Main Navigation menu Starts -->
+					<div class="collapse navbar-collapse navbar-responsive-collapse">
+						<ul class="nav navbar-nav navbar-right">
+							<li class="current"><a href="#header">公众号</a></li>
+							<li><a href="#section-feature">真题库</a></li>
+							<li><a href="#section-services">精品汇</a></li>
+							<li><a href="#section-testimonials">志愿者</a></li>
+						</ul>
+					</div>
+					<!-- Main Navigation menu ends-->
+				</nav>
+			</div>
+		</div>
+	</div>
+	<!-- sticky-bar Ends-->
+	<!--=== Header section Ends ===-->
+	
+	<!--=== Home Section Starts ===-->
+	<div id="section-home" class="home-section-wrap center">
+		<div class="section-overlay"></div>
+		<div class="container home">
+			<div class="row">
+				<h1 class="well-come">关注您的期待，期待您的关注</h1>
+				
+				<div class="col-md-8 col-md-offset-2">
+					<p class="intro-message"> 
+						欢迎加入软考帮，我们的口号是『 轻松学习软考，大家帮助大家』！
+					</p>
 
-
-    <section id="section_archive" class="clearfix scrollblock block-archive">    
-     <div class="container" role="main">  
-      <div class="alert alert-success" role="alert">
-        亲，欢迎加入软考帮，我们的口号是『<strong> 轻松学习软考，大家帮助大家</strong>』！
-
-      </div>
-
-      <div class="row">
-        <div class="col-sm-6">
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h3 class="panel-title">信息系统项目管理师<span class="badge">2</span></h3>
-            </div>
-            <div class="panel-body">
-              <p>属于计算机技术与软件专业技术资格（水平）考试（即软考）高级资格考试里面的一项，对应于高级项目经理，通过本考试的合格人员具有高级工程师的实际工作能力和业务水平，可聘任高级工程师职务。
-	              <a href="./advPM/" class="btn  btn-sm btn-info" role="button">
-	                <span class="glyphicon glyphicon-hand-right"> </span> 
-	                访问真题库 &raquo;
-	              </a>
-	              <a href="http://t.cn/RzPQeT2" class="btn  btn-sm btn-success" role="button">
-	                2014年11月上午真题
-	              </a>
-              </p>
-              
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6">
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h3 class="panel-title">系统集成项目管理工程师<span class="badge">1</span></h3>
-            </div>
-            <div class="panel-body">
-              <p>属于计算机技术与软件专业技术资格（水平）考试（即软考）中级资格考试里面的一项，对应于中级项目经理，主要在信息系统建设和集成工作中担任相关的项目管理工作，可聘任中级工程师职务。
-                <a href="./PM/" class="btn  btn-sm btn-info" role="button">
-                  <span class="glyphicon glyphicon-hand-right"> </span> 访问真题库 &raquo;
-                </a>
-	              <a href="http://t.cn/Rz7UJfL" class="btn  btn-sm btn-success" role="button">
-	                2014年11月上午真题
-	              </a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="row">
-        <div class="col-sm-6">
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h3 class="panel-title">系统架构设计师</h3>
-            </div>
-            <div class="panel-body">
-              <p>属于软考高级资格考试里面的一项，是一个“最终确认和评估系统需求，给出开发规范，搭建系统实现的核心构架，并澄清技术细节、扫清主要难点”的技术人员，需要与系统分析师、项目管理师相互协作、配合工作，通过本考试的合格人员具有高级工程师的实际工作能力和业务水平。</p>              
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6">
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h3 class="panel-title">系统分析师</h3>
-            </div>
-            <div class="panel-body">
-              <p>属于软考高级资格考试里面的一种，早期被称作系统分析员，是指具有从事计算机应用系统的分析和设计工作能力及业务水平，能指导系统设计师和高级程序员的工作的一族，在软考体系中被称作含金量最高、难度最大的一门考试，通过本考试的合格人员具有高级工程师的实际工作能力和业务水平。</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-  </section>
+					<div class="home-buttons">					
+						<p class="fancy-button button-line vertical" style="border:none">
+							<span class="icon">
+								<img src="images/qrcode.jpg" alt="" />
+							</span>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--=== Home Section Ends ===-->
+</div>
 
 
+<!--=== Features section Starts ===-->
+<section id="section-feature" class="feature-wrap">
+	<div class="container features center">
+		<div class="row">
+			<div class="col-md-10 col-md-offset-1 center section-title">
+				<h3 class="feature-welcome">史上最清爽的软考真题库</h3>
+			</div>
+			<div class="col-lg-12">
+					<!--Features container Starts -->
 
-    <section id="section_about" class="clearfix scrollblock block-about">   
-      <div class="container" role="main">
-        <div class="page-header">
-            <h3><span class="glyphicon glyphicon-home"> </span> 软考帮</h3>
-        </div>        
-        <div class="well">
-            <p>一直想汇集一帮人学习软考知识、研究软考攻略，因为在繁忙的工作中坚持学习挺不容易，以考促学是一种手段，互相鼓励也是一种手段，于是搞了这个软考帮。希望通过历届的考试真题和考友的相互扶持营造出一个学习交流软件开发和管理知识的小圈子。</p>
-              <p>项目经理（信息系统项目管理师 &amp; 系统集成项目管理工程师）交流QQ群号<span class="label label-info">97981703</span><a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=51e578fbbb387fb3d3507c67afa8aa8c8a37bf437c8641dae338bc364bc6013a"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="软考帮-项目经理" title="软考帮-项目经理"></a>，架构师交流QQ群号<span class="label label-info">96880287</span><a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=770d1bfc9ab0a87e8d4c4081fe37414e7b31488ba158d26b4ef6b834d8346969"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="软考帮-架构师" title="软考帮-架构师"></a>，系统分析师交流QQ群号<span class="label label-info">96165359 </span><a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=e3a4a0eccd711b8733642e5887684141453fbba8065029b3f93956049cab8460"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="软考帮-系统分析师" title="软考帮-系统分析师"></a>，若你有分享资料的想法，可以在QQ群里直接分享，也可以发邮件至rkbang@126.com。</p>
-        </div>        
-        <div class="well">
-          <p>计算机技术与软件专业技术资格（水平）考试（以下简称计算机软件考试）是原中国计算机软件专业技术资格和水平考试（简称软件考试）的完善与发展。这是由国家人力资源和社会保障部、工业和信息化部领导下的国家级考试，其目的是，科学、公正地对全国计算机与软件专业技术人员进行职业资格、专业技术资格认定和专业技术水平测试。</p>
-          <p>根据人事部、信息产业部文件（国人部发[2003]39号），计算机软件考试纳入全国专业技术人员职业资格证书制度的统一规划。通过考试获得证书的人员，表明其已具备从事相应专业岗位工作的水平和能力，用人单位可根据工作需要从获得证书的人员中择优聘任相应专业技术职务（技术员、助理工程师、工程师、高级工程师）。计算机专业技术资格（水平）实施全国统一考试后，不再进行计算机技术与软件相应专业和级别的专业技术职务任职资格评审工作。因此，这种考试既是职业资格考试，又是职称资格考试。</p>
-        </div>
+					<ul id="card-ul" class="features-hold baraja-container">
+					
+						<!-- Single Feature Starts -->
+						<li class="single-feature" title="系统架构设计师">
+							<img src="images/arch.jpg" alt="" class="feature-image" /><!-- Feature Icon -->
+							<h4 class="feature-title color-scheme">系统架构设计师</h4>
+							<p class="feature-text">
+								全国软考高级资格，自2009年起，每年1次考试机会（下半年）。
+							</p>
+							
+								<a href="pdf/2016_2_arch_am.pdf" class="fancy-button button-line btn-col small vertical">
+									查看
+									<span class="icon">
+										<i class="fa fa-file-pdf-o"></i>
+									</span>
+								</a>
+							
+						</li>
+						<!-- Single Feature Ends -->
+						
+						<!-- Single Feature Starts -->
+						<li class="single-feature" title="系统分析师">
+							<img src="images/analyst.jpg" alt="" class="feature-image" /><!-- Feature Icon -->
+							<h4 class="feature-title color-scheme">系统分析师</h4>
+							<p class="feature-text">
+								全国软考高级资格，原名系统分析员，每年1次考试机会（上半年）。
+							</p>
+							<a href="#" class="fancy-button button-line btn-col small zoom">
+								查看
+								<span class="icon">
+									<i class="fa fa-file-pdf-o"></i>
+								</span>
+							</a>
+						</li>
+						<!-- Single Feature Ends -->
+						
+						<!-- Single Feature Starts -->
+						<li class="single-feature" title="信息系统项目管理师">
+							<img src="images/apm.jpg" alt="" class="feature-image" /><!-- Feature Icon -->
+							<h4 class="feature-title color-scheme">信息系统项目管理师</h4>
+							<p class="feature-text">
+								全国软考高级资格，对应于高级项目经理，每年2次考试机会。
+							</p>
+							<a href="pdf/2016_2_apm_am.pdf" class="fancy-button button-line btn-col small zoom">
+								查看
+								<span class="icon">
+									<i class="fa fa-file-pdf-o"></i>
+								</span>
+							</a>
+						</li>
+						<!-- Single Feature Ends -->
+						
+						<!-- Single Feature Starts -->
+						<li class="single-feature" title="系统集成项目管理工程师">
+							<img src="images/pm.jpg" alt="" class="feature-image" /><!-- Feature Icon -->
+							<h4 class="feature-title color-scheme">系统集成项目管理工程师</h4>
+							<p class="feature-text">
+								全国软考中级资格，对应于中级项目经理，每年2次考试机会。
+							</p>
+							<a href="pdf/2016_2_pm_am.pdf" class="fancy-button button-line btn-col small zoom">
+								查看
+								<span class="icon">
+									<i class="fa fa-file-pdf-o"></i>
+								</span>
+							</a>
+						</li>
+						<!-- Single Feature Ends -->
+						
+						<!-- Single Feature Starts -->
+						<li class="single-feature" title="软件设计师">
+							<img src="images/dev.jpg" alt="" class="feature-image" /><!-- Feature Icon -->
+							<h4 class="feature-title color-scheme">软件设计师</h4>
+							<p class="feature-text">
+								全国软考中级资格，原名高级程序员，每年2次考试机会。
+							</p>
+							<a href="pdf/2016_2_dev_am.pdf" class="fancy-button button-line btn-col small zoom">
+								查看
+								<span class="icon">
+									<i class="fa fa-file-pdf-o"></i>
+								</span>
+							</a>
+						</li>
+						<!-- Single Feature Ends -->
+						
+						<!-- Single Feature Starts -->
+						<li class="single-feature" title="软件评测师">
+							<img src="images/testing.jpg" alt="" class="feature-image" /><!-- Feature Icon -->
+							<h4 class="feature-title color-scheme">软件评测师</h4>
+							<p class="feature-text">
+								全国软考中级资格，每年1次考试机会（下半年）。
+							</p>
+							<a href="pdf/2016_2_testing_am.pdf" class="fancy-button button-line btn-col small zoom">
+								查看
+								<span class="icon">
+									<i class="fa fa-file-pdf-o"></i>
+								</span>
+							</a>
+						</li>
+						<!-- Single Feature Ends -->
+						
+						<!-- Single Feature Starts -->
+						<li class="single-feature" title="网络规划师">
+							<img src="images/netplaner.jpg" alt="" class="feature-image" /><!-- Feature Icon -->
+							<h4 class="feature-title color-scheme">网络规划设计师</h4>
+							<p class="feature-text">
+								全国软考高级资格，每年1次考试机会（下半年）。
+							</p>
+							<a href="pdf/2016_2_netplaner_am.pdf" class="fancy-button button-line btn-col small zoom">
+								查看
+								<span class="icon">
+									<i class="fa fa-file-pdf-o"></i>
+								</span>
+							</a>
+						</li>
+						<!-- Single Feature Ends -->
+						
+						<!-- Single Feature Starts -->
+						<li class="single-feature" title="网络工程师">
+							<img src="images/netengineer.jpg" alt="" class="feature-image" /><!-- Feature Icon -->
+							<h4 class="feature-title color-scheme">网络工程师</h4>
+							<p class="feature-text">								
+								全国软考中级资格，每年2次考试机会。
+							</p>
+							<a href="pdf/2016_2_netengineer_pm.pdf" class="fancy-button button-line btn-col small zoom">
+								查看
+								<span class="icon">
+									<i class="fa fa-file-pdf-o"></i>
+								</span>
+							</a>
+						</li>
+						<!-- Single Feature Ends -->
+					</ul>
+					<!--Features container Ends -->
+					
+					<!-- Features Controls Starts -->
+					<div class="features-control relative">
+						<button class="control-icon fancy-button button-line no-text btn-col bell" id="feature-prev" title="Previous" >
+							<span class="icon">
+								<i class="fa fa-arrow-left"></i>
+							</span>
+						</button>
+						<button class="control-icon fancy-button button-line no-text btn-col zoom" id="feature-expand" title="Expand" >
+							<span class="icon">
+								<i class="fa fa-expand"></i>
+							</span>
+						</button>
+						<button class="control-icon fancy-button button-line no-text btn-col zoom" id="feature-close" title="Collapse" >
+							<span class="icon">
+								<i class="fa fa-compress"></i>
+							</span>
+						</button>
+						<button class="control-icon fancy-button button-line no-text btn-col bell" id="feature-next" title="Next" >
+							<span class="icon">
+								<i class="fa fa-arrow-right"></i>
+							</span>
+						</button>
+					</div>
+					<!-- Features Controls Ends -->
+			</div>
+		</div>
+	</div>
+</section>
+<!--=== Features section Ends ===-->
 
-      </div>
-    </section> 
+<!--=== Services section Starts ===-->
+<section id="section-services" class="services-wrap">
+	<div class="container services">
+		<div class="row">
+		
+			<div class="col-md-10 col-md-offset-1 center section-title">
+				<h3>软考帮精品汇</h3>
+			</div>
+		
+			<!-- Single Service Starts -->
+			<div class="col-md-6 col-sm-6 service animated" data-animation="fadeInLeft" data-animation-delay="700">
+				<span class="service-icon center"><i class="icon icon-basic-paperplane fa-3x"></i></span>
+				<div class="service-desc">
+					<h4 class="service-title color-scheme">软考简述</h4>
+					<p class="service-description justify">
+						国家软考代表的是计算机和软件工程相关领域最权威水平和职称认证，从2004年1月1日起IT行业职称资格一律通过国家软考来进行（以考代评的方式），合格证书由<b>国家人力资源和社会保障部</b>、<b>工业和信息化部</b>共同颁发，在全国范围内永久有效，另有《专业资格考试登记表》存入个人档案。
+					</p>
+					<p class="service-description justify">
+						由于无报考条件限制，合格证书与职称评定、积分入户、出国签证、企业资质、国际化合作紧密相关，软考市场热度一致持续上涨，年报考人数超过了25万人，年合格人数接近5万人，“十二五”软考报名总人数达165万，平均通过率为16.9%，“十三五”软考规划报考人数达250万。
+					</p>
 
-    <section id="section_link" class="clearfix scrollblock block-link">
-      <div class="container" role="main">
-          <div class="page-header">
-            <h3><span class="glyphicon glyphicon-link"> </span> 友情链</h3>
-          </div>   
-          <div class="link-row">
-            <span class="label label-info link-title">
-               主管机构
-            </span>                        
-            <a target="_blank" href="http://www.pmi.org" class="btn btn-sm btn-default" role="button">美国项目管理协会</a>                    
-            <a target="_blank" href="http://www.mohrss.gov.cn" class="btn btn-sm btn-default" role="button">人力资源和社会保障部</a>                    
-            <a target="_blank" href="http://www.miit.gov.cn" class="btn btn-sm btn-default" role="button">工业和信息化部</a>               
-            <a target="_blank" href="http://www.informatization.gov.cn/" class="btn btn-sm btn-default" role="button">中国电子协会系统集成分会</a>          
-            <a target="_blank" href="http://www.ruankao.org.cn" class="btn btn-sm btn-default" role="button">中国计算机技术职业资格网(软考办)</a>                    
-            <a target="_blank" href="http://www.ruankao.org.cn/jsj/cms/dfjg/dfjg_2011032801.html" class="btn  btn-sm btn-default" role="button">全国各省市软考网站</a>               
-          </div>
+					<p class="service-description justify">						
+						全国软考官网：<a href="http://ruankao.org.cn/">
+							http://ruankao.org.cn</a>
+					</p>
+				</div>
+			</div>
+			<!-- Single Service Ends -->
+			
+			<!-- Single Service Starts -->
+			<div class="col-md-6 col-sm-6 service animated" data-animation="fadeInUp" data-animation-delay="700">
+				<span class="service-icon center"><i class="icon icon-basic-book-pencil fa-3x"></i></span>
+				<div class="service-desc">
+					<h4 class="service-title color-scheme">备考资料</h4>
+					<p class="service-description justify">
+						软考帮精心整理的全国软考历年真题（附赠参考答案，可离线浏览，可打印装订），另有官方教材、视频教程、应试技巧等各类备考资料，欢迎关注软考帮微信公众号免费获取下载地址。
+					</p>
+				</div>
+			</div>
+			<!-- Single Service ends -->
+			
+			
+			<!-- Single Service Starts -->
+			<div class="col-md-6 col-sm-6 service animated" data-animation="fadeInUp" data-animation-delay="700">
+				<span class="service-icon center"><i class="icon icon-basic-lightbulb fa-3x"></i></span>
+				<div class="service-desc">
+					<h4 class="service-title color-scheme">讨论交流</h4>
+					<p class="service-description justify">
+						为系统架构设计师、系统分析师、软件设计师考友设置了架构系分QQ群96880287、96165359，为信息系统项目管理师、系统集成项目管理工程师、软件评测师等考友设置了项管综合QQ群97981703，欢迎加入。
+					</p>
+				</div>
+			</div>
+			<!-- Single Service Ends -->
+		</div>
+	</div>
+</section>
+<!--=== Services section Ends ===-->
 
-          <div class="link-row">
-              <span class="label label-info link-title">
-                 考试说明
-              </span>
-              <a target="_blank" href="http://www.ruankao.org.cn/jsj/cms/zyjs/gj/zgjs_xxxtxmgls.html" class="btn  btn-sm btn-default" role="button">信息系统项目管理师考试说明</a>
-              <a target="_blank" href="http://www.ruankao.org.cn/jsj/cms/zyjs/zj/zyjs_xtjcgl.html" class="btn  btn-sm btn-default" role="button">系统集成项目管理工程师考试说明</a>
-              <a target="_blank" href="http://www.ruankao.org.cn/jsj/cms/zyjs/gj/zyjs_jgsjs.html" class="btn  btn-sm btn-default" role="button">系统架构设计师考试说明</a>
-              <a target="_blank" href="http://www.ruankao.org.cn/jsj/cms/zyjs/gj/zgjs_xtfxs.html" class="btn  btn-sm btn-default" role="button">系统分析师考试说明</a>
+<!--=== Testimonials section Starts ===-->
+<section id="section-testimonials" class="testimonials-wrap">
+	<div class="section-overlay"></div>
+	<div class="container testimonials center animated" data-animation="rollIn" data-animation-delay="500">
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+				<div class="testimonial-slider">
+					<!-- Single Testimonial Starts -->
+					<div class="testimonial">
+						<h4 class="happy-client">志愿者征集</h4>
+						<p class="comment">
+							如果您打算将自己原创的备考经验、软考感悟、软件开发经验分享给大家，或是有意参与考试专题资料的梳理，请在软考帮公众号后台留言，我们将荣幸地邀请您成为我们的志愿者。
+						</p>
+						
+						<span class="client-info">——rkbang</span>
+					</div>
+					<!-- Single Testimonial Ends -->
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--=== Testimonials section Ends ===-->
 
-              <a target="_blank" href="http://www.ruankao.org.cn/jsj/cms/kszn/zyjb/" class="btn  btn-sm btn-default" role="button">软考考试指南</a>
-          </div>
 
-          <div class="link-row">
-              <span class="label label-info link-title">
-                 资质查询
-              </span>
-              <a target="_blank" href="http://www.ceecm.gov.cn/miit_webmap/miit_jcqy" class="btn  btn-sm btn-default" role="button">集成企业资质查询</a>
-              <a target="_blank" href="http://www.ceecm.gov.cn/miit_webmap/miit_xmjl" class="btn  btn-sm btn-default" role="button">项目经理资质查询</a>
-              <a target="_blank" href="http://www.ceecm.gov.cn/miit_webmap/miit_gjxmjl" class="btn  btn-sm btn-default" role="button">高级项目经理资质查询</a>
-              <a target="_blank" href="http://www.ceecm.gov.cn/miit_webmap/miit_jlqy" class="btn  btn-sm btn-default" role="button">监理单位资质查询</a>              
-              <a target="_blank" href="http://www.ceecm.gov.cn/miit_webmap/miit_jlgcs" class="btn  btn-sm btn-default" role="button">监理工程师资质查询</a>
+<!--=== Footer section Starts ===-->
+<div id="section-footer" class="footer-wrap">
+	<div class="container footer center">
+		<div class="row">
+			<div class="col-lg-12">
+				<h4 class="footer-title"><!-- Footer Title -->
+					<img src="images/rkbang-logo.png" alt="" class="logo img-circle" />
+				</h4>
+				
+				<!-- Social Links -->
+				<div class="social-icons">
+					
+					<div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_youdao" data-cmd="youdao" title="分享到有道云笔记"></a><a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a><a href="#" class="bds_mshare" data-cmd="mshare" title="分享到一键分享"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_linkedin" data-cmd="linkedin" title="分享到linkedin"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_evernotecn" data-cmd="evernotecn" title="分享到印象笔记"></a><a href="#" class="bds_copy" data-cmd="copy" title="分享到复制网址"></a></div>
 
-          </div>
-          <div style="height:60px"> </div>
-      </div>
-    </section> 
+				<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"32"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+				</script>
 
-      <section id="section_foot" class="clearfix scrollblock block-foot">
-        <div class="container" role="main">
-            <div class="footer">
-              <div class="container">
-                <p class="text-muted">  &copy; 2014 www.rkbang.com all rights reserved.</p>        
-                <script>
-                      var _hmt = _hmt || [];
-                      (function() {
-                        var hm = document.createElement("script");
-                        hm.src = "//hm.baidu.com/hm.js?8099410928a300e62210677cc7066ade";
-                        var s = document.getElementsByTagName("script")[0]; 
-                        s.parentNode.insertBefore(hm, s);
-                      })();
-                </script>
+				</div>
 
-              </div>
-            </div>
-            <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
-            <script src="http://cdn.bootcss.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-            <script src="assets/app.js"></script>
-        </div>
-      </section> 
 
-  </body>
+				
+				<p class="copyright">Copyright &copy; 2016 rkbang.com All rights reserved.</p>
+			</div>
+		</div>
+	</div>
+</div>
+<!--=== Footer section Ends ===-->
+
+<!--==== Js files ====-->
+<!--==== Essential files ====-->
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/bootstrapValidator.min.js"></script>
+<script type="text/javascript" src="js/modernizr.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+
+<!--==== Slider and Card style plugin ====-->
+<script type="text/javascript" src="js/jquery.baraja.js"></script>
+<script type="text/javascript" src="js/jquery.vegas.min.js"></script>
+<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+
+<!--==== MailChimp Widget plugin ====-->
+<script type="text/javascript" src="js/jquery.ajaxchimp.min.js"></script>
+
+<!--==== Scroll and navigation plugins ====-->
+<script type="text/javascript" src="js/jquery.nicescroll.min.js"></script>
+<script type="text/javascript" src="js/jquery.nav.js"></script>
+<script type="text/javascript" src="js/jquery.appear.js"></script>
+<script type="text/javascript" src="js/jquery.fitvids.js"></script>
+
+<!--==== Custom Script files ====-->
+<script type="text/javascript" src="js/custom.js"></script>
+
+</body>
 </html>
